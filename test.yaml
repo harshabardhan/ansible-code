@@ -2,7 +2,5 @@
 - hosts: all
   tasks:
   - name: system date info
-    shell: date
-    register: output
- - debug:
-     msg: "{{output}}"
+    shell: echo "hello world"
+
