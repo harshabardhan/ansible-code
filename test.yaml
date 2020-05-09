@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name: system date info
+    shell: date
+    register: output
+ - debug:
+     msg: "{{output}}"
